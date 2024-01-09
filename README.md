@@ -3,11 +3,11 @@
 <h1>Tabela tb_categorias: </h1>
 </br>
 
-**id (bigint auto_increment primary key):** Identificador único para cada categoria.
+**```id (bigint auto_increment primary key)```:** Identificador único para cada categoria.
 </br>
-**descricao (varchar(255) not null):** Descrição da categoria.
+**```descricao (varchar(255) not null)```:** Descrição da categoria.
 </br>
-**perecivel (boolean not null):** Indica se os produtos nesta categoria são perecíveis ou não.
+**```perecivel (boolean not null)```:** Indica se os produtos nesta categoria são perecíveis ou não.
 </br>
 </br>
 
@@ -23,15 +23,15 @@ O atributo **perecivel** é uma escolha relevante para indicar se os produtos ne
 
 <h1>Tabela tb_usuarios: </h1>
 
-**id (bigint auto_increment primary key):** Identificador único para cada usuário.
+**```id (bigint auto_increment primary key)```:** Identificador único para cada usuário.
 </br>
-**nome (varchar(255) not null):** Nome do usuário.
+**```nome (varchar(255) not null)```:** Nome do usuário.
 </br>
-**usuario (varchar(255) not null unique):** Nome de usuário único para login.
+**```usuario (varchar(255) not null unique)```:** Nome de usuário único para login.
 </br>
-**senha (varchar(255) not null):** Senha do usuário.
+**```senha (varchar(255) not null)```:** Senha do usuário.
 </br>
-**foto (varchar(255)):** Caminho para a foto do usuário.
+**```foto (varchar(255))```:** Caminho para a foto do usuário.
 </br>
 </br>
 <h3> Motivo das Escolhas: </h3>
@@ -46,19 +46,19 @@ A **foto** é opcional, pois nem todos os usuários podem ter uma foto associada
 
 <h1>Tabela tb_produtos: </h1>
 
-**id (bigint auto_increment primary key):** Identificador único para cada produto.
+**```id (bigint auto_increment primary key)```:** Identificador único para cada produto.
 </br>
-**nome (varchar(255) not null unique):** Nome do produto.
+**```nome (varchar(255) not null unique)```:** Nome do produto.
 </br>
-**descricao (varchar(255)):** Descrição do produto.
+**```descricao (varchar(255))```:** Descrição do produto.
 </br>
-**preco (decimal(10,2) not null):** Preço do produto.
+**```preco (decimal(10,2) not null)```:** Preço do produto.
 </br>
-**quantidade (int not null):** Quantidade disponível do produto.
+**```quantidade (int not null)```:** Quantidade disponível do produto.
 </br>
-**categoria_id (bigint):** Chave estrangeira referenciando a categoria do produto.
+**```categoria_id (bigint)```:** Chave estrangeira referenciando a categoria do produto.
 </br>
-**usuario_id (bigint):** Chave estrangeira referenciando o usuário associado ao produto.
+**```usuario_id (bigint)```:** Chave estrangeira referenciando o usuário associado ao produto.
 </br>
 
 <h3> Motivo das Escolhas: </h3>
